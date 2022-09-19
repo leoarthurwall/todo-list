@@ -28,6 +28,7 @@ export const CustomForm = ({addTask}) => {
           onInput={(e) => setTask(e.target.value)}
           required
           autoFocus
+          autoComplete="off"
           maxLength={60}
           placeholder="Enter Task"
         />

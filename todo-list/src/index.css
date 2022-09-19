@@ -1,3 +1,5 @@
+
+
 body {
   text-align: center;
   background-color: aliceblue;
@@ -8,7 +10,8 @@ body {
 .todo {
   display: flex;
   justify-content: center;
-  height: 24px;
+  align-items: center;
+  height: 30px;
   gap: 0.5rem;
 }
 
@@ -18,10 +21,14 @@ body {
   align-items: center;
   background-color: purple;
   border: none;
-  height:max-content;
-  width: 30px;
+  height: 100%;
+  max-width: fit-content;
   border-radius: 3px;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
 }
 .plus-icon {
   color: white;
@@ -29,15 +36,17 @@ body {
   width: 24px;
 }
 .input {
-  height: 100%;
+  height: fit-content;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
-
+  padding: 0.4rem 1rem;
 }
 
 input::placeholder{
-  padding-left: 0.4rem;
   font-size: 0.7rem;
   color: rgb(162, 162, 162);
+}
+.label{
+  pointer-events: none;
 }
