@@ -106,3 +106,10 @@ input::placeholder{
   display: flex;
   gap: 0.5rem;
 }
+.delete {
+  background-color: red;
+}
+.delete:hover{
+  background-color: rgb(255, 127, 127);
+
+}

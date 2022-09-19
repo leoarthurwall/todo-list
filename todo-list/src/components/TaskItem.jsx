@@ -1,4 +1,4 @@
-import { PencilIcon, TrashIcon } from "@heroicons/react/24/solid";
+import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function TaskItem({ task }) {
@@ -29,10 +29,10 @@ export default function TaskItem({ task }) {
           aria-label={`Update ${task.name} Task`}
           //onClick={}
         >
-          <PencilIcon width={20} height={20} color="white" />
+          <PencilSquareIcon width={20} height={20} color="white" />
         </button>
         <button
-          className="button"
+          className='button delete'
           aria-label={`Update ${task.name} Task`}
           //onClick={}
         >
