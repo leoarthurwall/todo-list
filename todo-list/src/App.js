@@ -59,3 +59,8 @@ function App() {
 }
 
 export default App;
+
+
+//TODO: DONT USE EDITING MODAL - SIMPLY MAKE EDITS IN THE SEARCH BAR OR EVEN THE NOTE ITSELF... CHECK OTHER VIDEO
+// https://www.youtube.com/watch?v=7u2Rv4HfCYQ
+
