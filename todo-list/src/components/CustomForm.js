@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 
-const handleFormSubmit = (e) => {
-  e.preventDefault();
-  console.log(e);
-};
+
 
 export const CustomForm = () => {
   const [task, setTask] = useState("");
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setTask("")
+  
+  };
+
   return (
     <form className="todo" onSubmit={handleFormSubmit}>
       <p>{task}</p>
