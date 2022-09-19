@@ -103,3 +103,7 @@ input::placeholder{
   text-align: left;
   line-height: 1.4;
 } */
+
+.checkbox:checked+label {
+  text-decoration: line-through;
+}
