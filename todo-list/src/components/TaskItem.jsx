@@ -1,13 +1,12 @@
-//library imports
-import { CheckIcon } from "@heroicons/react/24/outline";
+import { PencilIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function TaskItem({ task }) {
-    const [isChecked, setIsChecked] = useState(task.checked)
+  const [isChecked, setIsChecked] = useState(task.checked);
 
-    const handleCheckboxChange = (e) => {
-        setIsChecked(!isChecked)
-    }
+  const handleCheckboxChange = (e) => {
+    setIsChecked(!isChecked);
+  };
 
   return (
     <li className="task-item">
@@ -23,6 +22,22 @@ export default function TaskItem({ task }) {
         <label htmlFor={task.id} className="task-item-label">
           {task.name}
         </label>
+      </div>
+      <div className="task-button-container">
+        <button
+          className="button"
+          aria-label={`Update ${task.name} Task`}
+          //onClick={}
+        >
+          <PencilIcon width={20} height={20} color="white" />
+        </button>
+        <button
+          className="button"
+          aria-label={`Update ${task.name} Task`}
+          //onClick={}
+        >
+          <TrashIcon width={20} height={20} color="white" />
+        </button>
       </div>
     </li>
   );
