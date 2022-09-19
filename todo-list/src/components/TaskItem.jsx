@@ -6,7 +6,7 @@ export default function TaskItem({ task, deleteTask, toggleTask }) {
 
   const handleCheckboxChange = (e) => {
     setIsChecked(!isChecked);
-    toggleTask(task.id)
+    toggleTask(task.id);
   };
 
   return (
