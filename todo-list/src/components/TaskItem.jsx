@@ -1,7 +1,7 @@
 import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
-export default function TaskItem({ task, deleteTask, toggleTask }) {
+export default function TaskItem({ task, deleteTask, toggleTask, enterEditMode }) {
   const [isChecked, setIsChecked] = useState(task.checked);
 
   const handleCheckboxChange = (e) => {
@@ -28,7 +28,7 @@ export default function TaskItem({ task, deleteTask, toggleTask }) {
         <button
           className="button"
           aria-label={`Update ${task.name} Task`}
-          onClick={toggleTask}
+          onClick={() => enterEditMode(task)}
         >
           <PencilSquareIcon width={20} height={20} color="white" />
         </button>

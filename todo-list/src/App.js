@@ -8,7 +8,8 @@ import { EditForm } from "./components/EditForm";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [editedTask, setEditedTasks] = useState(null);
+  const [editedTask, setEditedTask] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
 
   const addTask = (task) => {
     setTasks((prevState) => [...prevState, task]);
@@ -31,15 +32,27 @@ function App() {
       prevState.map((t) => (t.id === task.id ? { ...t, name: task.name } : t))
     );
   };
+
+  const enterEditMode = (task) => {
+    setEditedTask(task);
+    setIsEditing(true)
+  };
   return (
     <div className="app-container">
       <header>
         <h1>My Task List</h1>
       </header>
-      <EditForm editedTask={editedTask} updateTask={updateTask} />
+      {isEditing && (
+        <EditForm editedTask={editedTask} updateTask={updateTask} />
+      )}
       <CustomForm addTask={addTask} />
       {tasks && (
-        <TaskList tasks={tasks} deleteTask={deleteTask} editTask={toggleTask} />
+        <TaskList
+          tasks={tasks}
+          deleteTask={deleteTask}
+          editTask={toggleTask}
+          enterEditMode={enterEditMode}
+        />
       )}
     </div>
   );
