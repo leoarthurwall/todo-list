@@ -1,9 +1,15 @@
-import './index.css';
+import "./index.css";
+
+//custom components
+import { CustomForm } from "./components/CustomForm";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <header>
+        <h1>hello world</h1>
+      </header>
+      <CustomForm />
     </div>
   );
 }
