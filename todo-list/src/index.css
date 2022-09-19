@@ -4,7 +4,13 @@ body {
   text-align: center;
   background-color: aliceblue;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 /* custom form */
 .todo {
@@ -13,6 +19,12 @@ body {
   align-items: center;
   height: 30px;
   gap: 0.5rem;
+  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding:10px;
+  margin-bottom: 20px;
 }
 
 .button {
@@ -54,21 +66,29 @@ input::placeholder{
 /* tasklist */
 
 .task-list{
-  display:grid;
-  list-style-type: none;
-  gap:1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* task item */
 
+
+
 .task-item {
+
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   justify-content: space-between;
-  gap: 0.6rem;
+  margin-bottom: 0.6rem;
   padding:0.6rem;
   font-size: 0.8rem;
+
+  background-color: white;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .task-group {
@@ -77,9 +97,9 @@ input::placeholder{
   gap: 0.5rem;
 }
 
-.task-item-label{
+/* .task-item-label{
   position: relative;
   cursor: pointer;
   text-align: left;
   line-height: 1.4;
-}
+} */
