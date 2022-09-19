@@ -50,3 +50,36 @@ input::placeholder{
 .label{
   pointer-events: none;
 }
+
+/* tasklist */
+
+.task-list{
+  display:grid;
+  list-style-type: none;
+  gap:1rem;
+}
+
+/* task item */
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding:0.6rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+.task-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-item-label{
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+}
