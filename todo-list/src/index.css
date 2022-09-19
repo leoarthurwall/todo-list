@@ -1,4 +1,43 @@
 body {
   text-align: center;
+  background-color: aliceblue;
+  font-family: sans-serif;
 }
 
+/* custom form */
+.todo {
+  display: flex;
+  justify-content: center;
+  height: 24px;
+  gap: 0.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  border: none;
+  height:max-content;
+  width: 30px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.plus-icon {
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+.input {
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+input::placeholder{
+  padding-left: 0.4rem;
+  font-size: 0.7rem;
+  color: rgb(162, 162, 162);
+}

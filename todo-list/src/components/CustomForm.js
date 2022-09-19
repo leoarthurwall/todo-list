@@ -1,5 +1,6 @@
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/24/solid";
+import { PlusIcon } from "@heroicons/react/24/solid";
+
 
 const handleFormSubmit = (e) => {
   e.preventDefailt();
@@ -21,12 +22,10 @@ export const CustomForm = () => {
           maxLength={60}
           placeholder="Enter Task"
         />
-        <label htmlFor="task" className="label">
-          Enter Task
-        </label>
+        <label htmlFor="task" className="label"></label>
       </div>
       <button className="button" aria-label="Add Task" type="submit">
-        <BeakerIcon className="h-6 w-6 text-blue-500" />
+        <PlusIcon className="plus-icon" />
       </button>
     </form>
   );
