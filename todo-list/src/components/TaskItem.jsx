@@ -25,13 +25,13 @@ export default function TaskItem({ task, deleteTask, toggleTask, enterEditMode }
         </label>
       </div>
       <div className="task-button-container">
-        <button
+        {/* <button
           className="button"
           aria-label={`Update ${task.name} Task`}
           onClick={() => enterEditMode(task)}
         >
           <PencilSquareIcon width={20} height={20} color="white" />
-        </button>
+        </button> */}
         <button
           className='button delete'
           aria-label={`Update ${task.name} Task`}
