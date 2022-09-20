@@ -37,7 +37,7 @@ export default function TaskItem({ task, deleteTask, toggleTask }) {
           aria-label={`Update ${task.name} Task`}
           onClick={() => deleteTask(task.id)}
         >
-          <TrashIcon width={20} height={20} color="white" />
+          <TrashIcon width={24} height={24} color="white" />
         </button>
       </div>
     </li>
