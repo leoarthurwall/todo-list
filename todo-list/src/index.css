@@ -13,6 +13,10 @@ body {
 
 
 /* custom form */
+.header{
+  font-weight: 400;
+  color: rgb(93, 0, 146);
+}
 .todo {
   display: flex;
   justify-content: center;
