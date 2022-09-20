@@ -1,4 +1,4 @@
-#TODO APP
+# TODO APP
 
 This project I learn how to make a todo app where you can add multiple tasks via an input field, mark them as complete and delete them.
 
