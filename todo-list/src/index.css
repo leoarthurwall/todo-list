@@ -111,14 +111,6 @@ input::placeholder{
   gap: 0.5rem;
 }
 .delete {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  padding: 5px;
-  border-radius: 3px;
-  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   background-color: red;
 }
 .delete:hover{
